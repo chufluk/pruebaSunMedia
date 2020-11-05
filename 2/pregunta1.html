@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		for (var i = 0; i < 5; i++) {
+		    setTimeout(function () {
+		        console.log(i);
+		    }, 1000)
+		}
+	</script>
+</head>
+<body>
+
+<h1>Pregunta 1</h1>
+<p>Se imprimiría un 5, debido a que la función que imprime el valor se ejecuta cada segundo, lo que permite al bucle realizar las 5 vueltas antes y dar así el valor final a la "i".</p>
+<h1>Pregunta 2</h1>
+<p>Una solución sería eliminar el setTimeout y dejando sólo en console.log(i) dentro del bucle:</p>
+<p>
+for (var i = 0; i < 5; i++) {
+  console.log(i);
+}
+</p>
+</body>
+</html>

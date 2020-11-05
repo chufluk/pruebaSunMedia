@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		var rgb = {
+		    red: "#FF0000",
+		    green: "#00FF00",
+		    blue: "#0000FF"
+		};
+
+		var wb = {
+		    white: "#FFFFFF",
+		    black: "#000000"
+		};
+
+		function extend(obj, src) {
+		    Object.keys(src).forEach(function(key) { 
+		    	obj[key] = src[key]; 
+		   	});
+		    return obj;
+		}
+		var colors = extend(rgb, wb);
+
+	</script>
+</head>
+<body>
+<h1>Pregunta 3</h1>
+<p>Internet Explorer no soporta EC6, por lo que hay que buscar una alternativa:</p>
+<script type="text/javascript">
+	document.write('<p>Valor RGB = ' 		+ JSON.stringify(rgb) + '</p>');
+	document.write('<p>Valor WB = ' 		+ JSON.stringify(wb) + '</p>');
+	document.write('<p>Valor Colors = ' 	+ JSON.stringify(colors) + '</p>');
+</script>
+</body>
+</html>
